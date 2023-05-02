@@ -1,13 +1,117 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+text-align: center;
+margin-top: 40px 35% 0;
+margin-bottom: 10px;
+color: rgb(6, 157, 6);
+}
+
+form {
+margin: 0 30%;
+padding: 20px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #f2f2f2;
+border: 0.2px solid #ccc;
+border-radius: 5px;
+box-shadow: 0px 0px 3px 7px rgb(147, 205, 147, 0.2);
+margin-bottom: 40px;
+}
+
+label {
+width: 70%;
+font-size: 16px;
+font-weight: bold;
+font-size: 13px;
+display:block;
+}
+input {
+height: 5vh;
+width: 30vw;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-top: 5px;
+outline: none;
+}
+
+.field{
+  margin-bottom: 25px;
+}
+
+.message{
+  height: 20vh;
+}
+
+button {
+  background-color: rgb(6, 157, 6);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+
+::placeholder{
+  font-size: 11px;
+  font-style: italic;
+}
+
+.required{
+  margin-bottom: 10px;
+  font-size: 10.5px;
+  color: red;
+}
+
+.success{
+  background-Color: rgb(6, 157, 6);
+  color: white;
+  margin: 0 35%;
+  padding: 10px 0;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.asteric{
+  color: red;
+}
+
+.failed{
+  background-Color: red;
+  color: white;
+  margin: 0 35%;
+  padding: 10px 0;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error{
+  color: red; 
+  display: block;
+  font-size: 10px;
+}
+
+.para{
+  margin: 0 8%;
+}
+.header{
+  font-size: 40px;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #4CAF50;
+  color: #ccc;
 }
